@@ -25,13 +25,18 @@ function App() {
   useEffect(() => {
     const interval = setInterval(
         () => {
+          let sl=timer.split(" ").length;
+          console.log(sl)
+          let ss=timer.split(" ")[3];
+          console.log(ss)
           if(count===0 || timer==="Time UP!!"){return clearInterval(interval);}
-          if(parseInt(timer.split(" ")[timer.split(" ").length-1])===0){
+          if(ss==='0'){
             setTimer("Time UP!!")
-            setScore("your score you bitch : "+ count);
+            setScore("your score : "+ count);
             refEle.current.style.display="none";
             return clearInterval(interval)}
-          setTimer("time left : "+parseInt(timer.split(" ")[timer.split(" ").length-1])-1);
+          setTimer("time left : "+(ss-1));
+          console.log(timer)
           clearInterval(interval);
         },1000);
 }, [timer,handleVal,count]);
@@ -52,7 +57,7 @@ function App() {
   return (
     <div className="App" onKeyUp={handleVal}>
       <div className='timer'><h2>{timer}</h2></div>
-      <div className='timer'><h1>{score}</h1></div>
+      <div><h1>{score}</h1></div>
       <div className="element" ref={refEle}>{val}</div>
     </div>
   );

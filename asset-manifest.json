@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/reactionGame/static/css/main.961395cb.css",
+    "main.js": "/reactionGame/static/js/main.eee5c991.js",
+    "static/js/787.6a541d2d.chunk.js": "/reactionGame/static/js/787.6a541d2d.chunk.js",
+    "index.html": "/reactionGame/index.html",
+    "main.961395cb.css.map": "/reactionGame/static/css/main.961395cb.css.map",
+    "main.eee5c991.js.map": "/reactionGame/static/js/main.eee5c991.js.map",
+    "787.6a541d2d.chunk.js.map": "/reactionGame/static/js/787.6a541d2d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.961395cb.css",
+    "static/js/main.eee5c991.js"
+  ]
+}

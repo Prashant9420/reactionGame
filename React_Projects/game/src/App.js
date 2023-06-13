@@ -58,7 +58,7 @@ function App() {
     <div className="App" onKeyUp={handleVal}>
       <div className='timer'><h2>{timer}</h2></div>
       <div><h1>{score}</h1></div>
-      <div className="element" ref={refEle}>{val}</div>
+      <div className="element" ref={refEle} onClick={handleVal} >{val}</div>
     </div>
   );
 }
